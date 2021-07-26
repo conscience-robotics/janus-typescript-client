@@ -191,7 +191,7 @@ declare namespace JanusJS {
          * @param callback 
          * @param config 
          */
-        listDevices(callback, config)
+        listDevices(callback, config): void;
 
         /**
          * destroys the session with the server, and closes all the handles (and related PeerConnections) the session may have with any plugin as well.
