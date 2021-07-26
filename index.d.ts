@@ -187,6 +187,13 @@ declare namespace JanusJS {
         attach(options: PluginOptions): void;
 
         /**
+         * Used to list all the video and audio devices that are connected
+         * @param callback 
+         * @param config 
+         */
+        listDevices(callback, config)
+
+        /**
          * destroys the session with the server, and closes all the handles (and related PeerConnections) the session may have with any plugin as well.
          */
         destroy(callbacks?: { success?: () => void, error?: (error: any) => void }): void;
