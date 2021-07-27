@@ -144,6 +144,7 @@ declare namespace JanusJS {
         static error(...args: any[]): void;
         static randomString(length: number): string;
         static attachMediaStream(videoElement: HTMLVideoElement, stream: MediaStream): void;
+        static listDevices(callback:any, config:any): void;
 
         /**
          * Janus sessions - this map is not cleaned on session destroy, which can cause memory leak :( (2021-02-01)
@@ -185,13 +186,6 @@ declare namespace JanusJS {
          * attaches the session to a plugin, creating a handle; more handles to the same or different plugins can be created at the same time;
          */
         attach(options: PluginOptions): void;
-
-        /**
-         * Used to list all the video and audio devices that are connected
-         * @param callback 
-         * @param config 
-         */
-        listDevices(callback, config): void;
 
         /**
          * destroys the session with the server, and closes all the handles (and related PeerConnections) the session may have with any plugin as well.
