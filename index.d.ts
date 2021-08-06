@@ -144,6 +144,7 @@ declare namespace JanusJS {
         static error(...args: any[]): void;
         static randomString(length: number): string;
         static attachMediaStream(videoElement: HTMLVideoElement, stream: MediaStream): void;
+        static listDevices(callback:any, config:any): void;
 
         /**
          * Janus sessions - this map is not cleaned on session destroy, which can cause memory leak :( (2021-02-01)

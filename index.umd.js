@@ -2,7 +2,7 @@
 (function(define) {
 
     define(function (require, exports, module) {
-	const Janus = require('./lib/janus.nojquery');
+	const Janus = require('./lib/janus');
 
         return function () {};
     });
